@@ -10,11 +10,10 @@ int num = Convert.ToInt32(Console.ReadLine());
 int coint = 1;
 while(coint <= num)
 {
-       if(coint % 2 == 0)
+    if(coint % 2 == 0)
     {
-        Console.WriteLine(coint+  ",");
-        coint++;   
+        Console.WriteLine(coint + ",");
     }
+    coint++;
 }
-    
 
