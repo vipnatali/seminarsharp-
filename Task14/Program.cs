@@ -9,8 +9,6 @@
 // 918 -> 1
 
 
-// int number = new Random().Next(100, 1000);
-// Console.WriteLine($"Число {number} ");
 
 Console.WriteLine("Введите трёхзначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
