@@ -10,39 +10,33 @@
 
 // 32679 -> 6
 
-// Console.WriteLine("Введите число: ");
-// int num = Convert.ToInt32(Console.ReadLine());
-// string numfirst = Convert.ToString(num);
-// int numDigit = numfirst.Length;
 
-// if (numDigit > 2)
-// {
-//     Console.WriteLine($"Третья цифра {numfirst[2]} ");
-// }
-// else
-// {
-//     Console.WriteLine("третьей цифры нет");
 
-// }
-
-Console.WriteLine("Введите число: ");
+Console.Write("Введите  число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int a = num % 10;
+int numDigit(int number)
 {
-Console.WriteLine(&"третья цифра {a} ");
+    int result = -1;
+    if (number >= 100)
+    {
+        while (number > 1000)
+        {
+            number = number / 10;
+        }
+        result = number % 10;
+    }
+    return result;
 }
- 
+
+if (numDigit(num) == -1)
 {
-   int num < 100;
-   Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine("Третьей цифры нет");
 }
-
-// else
-
-//     if(num = num / 10 % 10)
-
-// Console.WriteLine($"Третья цифра {num}");
+else
+{
+    Console.WriteLine($"Третья цифра: {numDigit(num)}");
+}
 
 
 
