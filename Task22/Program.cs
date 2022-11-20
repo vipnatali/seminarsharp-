@@ -15,6 +15,14 @@
 Console.WriteLine("Введите пятизначное число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-if ((num / 10000 == num % 10) && ((num / 1000) % 10 == (num % 100) / 10))
+if (num == 5)
+{
+    if ((num / 10000 == num % 10) && ((num / 1000) % 10 == (num % 100) / 10))
     Console.WriteLine("Да");
 else Console.WriteLine("Нет");
+}
+if((num <= 4) && (num > 5))
+Console.WriteLine("Введёное число не верно");
+// if ((num / 10000 == num % 10) && ((num / 1000) % 10 == (num % 100) / 10))
+//     Console.WriteLine("Да");
+// else Console.WriteLine("Нет");

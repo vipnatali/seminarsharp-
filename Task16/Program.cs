@@ -10,12 +10,18 @@
 Console.WriteLine("Введите цифру: ");
 int day = Convert.ToInt32(Console.ReadLine());
 
-if (day >= 1 && day <= 7)
-{
-    if (day == 6 | day == 7)
-     Console.WriteLine("Да");
-    else Console.WriteLine("Нет");
-}
+if (day == 6 | day == 7)
+    Console.WriteLine("Да");
+else Console.WriteLine("Нет");
+
+if (day >= 8)
+    Console.WriteLine("Увы, вы ошиблись, такого числа нет.");
+
+
+
+
+
+
 // if(num == "1")
 // Console.WriteLine("нет");
 // else if(num == "2")
