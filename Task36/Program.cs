@@ -3,7 +3,7 @@
 
 // [345, 897, 568, 234] -> 2
 
-int[] CreateArrayRndInt (int size, int min, int max) 
+int[] CreateArrayRndInt(int size, int min, int max)
 {
     int[] arr = new int[size];
     Random rnd = new Random();
@@ -15,24 +15,23 @@ int[] CreateArrayRndInt (int size, int min, int max)
     return arr;
 }
 
-void PrintArray (int[] arr)
+void PrintArray(int[] arr)
 {
     Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
-       if(i < arr.Length - 1) Console.Write($"{arr[i]}, ");
-       else Console.Write($"{arr[i]}");
+        if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+        else Console.Write($"{arr[i]}");
     }
     Console.WriteLine("]");
 }
 
-int SumElements (int[] arr)
+int SumElements(int[] arr)
 {
     int sum = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if (arr [i] % 2 == 0);
-         sum++;
+        if (arr[i] % 2 == 0) sum++;
     }
     return sum;
 }
@@ -40,7 +39,7 @@ int SumElements (int[] arr)
 int[] array = CreateArrayRndInt(10, 100, 999);
 PrintArray(array);
 
-int sum = SumElements(array);
- Console.WriteLine($"Количество чётных чисел -> {sum}" );
+int sumElements = SumElements(array);
+Console.WriteLine($"Количество чётных чисел -> {sumElements}");
 
 
