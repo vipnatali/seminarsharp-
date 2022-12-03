@@ -17,7 +17,7 @@ double k2 = Convert.ToDouble(Console.ReadLine());
 
 double X(double b1, double k1, double b2, double k2)
 {
-    double x = (b1 - b2) / (k1 - k2);
+    double x = -(b1 - b2) / (k1 - k2);
     return x;
 }
 
